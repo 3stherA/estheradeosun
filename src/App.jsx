@@ -5,6 +5,11 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import "./App.css";
 
+// Image imports
+import cruise from "./assets/images/cameraRoll/cruise.jpg";
+import montanas from "./assets/images/cameraRoll/montanas.jpg";
+import headshot from "./assets/images/headshot1.png";
+
 // =======================
 // Main Component
 // =======================
@@ -21,10 +26,7 @@ function App() {
   }, []);
 
   // Camera roll image state
-  const cameraImages = [
-    "/cameraRoll/cruise.jpg",
-    "/cameraRoll/montanas.jpg"
-  ];
+  const cameraImages = [cruise, montanas];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -46,7 +48,7 @@ function App() {
         {/* Box A – Headshot */}
         <div className="box box-a">
           <img
-            src="/images/headshot1.png"
+            src={headshot}
             alt="Esther Adeosun"
             className="box-a-image"
           />

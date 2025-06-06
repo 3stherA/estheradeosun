@@ -7,7 +7,7 @@ body, html {
   height: 100%;
   font-family: 'Red Hat Display', sans-serif;
   color: #140c14;
-  background-image: url('/images/darkBground.png');
+  background-image: url('assets/images/darkBground.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
