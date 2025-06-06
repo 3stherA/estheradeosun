@@ -59,10 +59,10 @@ function App() {
           <p className="about-paragraph">
             <span className="about-intro">Hi! I'm Esther.</span><br /><br />
             I’m a Software Engineering student at the University of Guelph with a deep love for learning and building.
-            I’m especially drawn to mobile app development, automation, and data analytics — areas where I can create
+            I’m especially drawn to mobile app development, automation, and data analytics, areas where I can create
             tools that make life simpler, more meaningful, or more joyful. I’m passionate about using technology to
             support real people in real ways, and I ultimately hope to become a professor so I can keep learning, teaching,
-            and pouring into others. For me, coding is not just a skill — it’s a way to serve.
+            and pouring into others. For me, coding is not just a skill, it’s a way to serve.
           </p>
         </div>
 
