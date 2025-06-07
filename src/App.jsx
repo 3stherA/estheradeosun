@@ -68,7 +68,14 @@ function App() {
 
         {/* Box C – Menu */}
         <div className="box box-c">
-          <button className="menu-item">Resume</button>
+          <button
+            className="menu-item"
+            onClick={() =>
+              window.open("/estheradeosun/Esther_Adeosun_Resume.pdf", "_blank")
+            }
+          >
+            Resume
+          </button>
           <button className="menu-item">Projects</button>
           <button className="menu-item">Hobbies</button>
         </div>
