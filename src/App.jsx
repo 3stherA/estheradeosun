@@ -2,11 +2,13 @@
 // Imports
 // =======================
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import "./App.css";
 
 // Image imports
 import cruise from "./assets/images/cameraRoll/cruise.jpg";
+import niagara from "./assets/images/cameraRoll/niagara.jpg";
+import reynolds from "./assets/images/cameraRoll/reynolds.jpg";
 import montanas from "./assets/images/cameraRoll/montanas.jpg";
 import headshot from "./assets/images/headshot1.png";
 
@@ -26,7 +28,7 @@ function App() {
   }, []);
 
   // Camera roll image state
-  const cameraImages = [cruise, montanas];
+  const cameraImages = [cruise, montanas, niagara, reynolds];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -37,6 +39,28 @@ function App() {
 
     return () => clearInterval(interval);
   }, []);
+
+  // Currently state
+
+  const currentMessages = [
+    "working on this portfolio",
+    "applying to internships",
+    "learning a new song on the guitar",
+    "catching up on sleep"
+  ];
+  
+  const [currentMsgIndex, setCurrentMsgIndex] = useState(0);
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentMsgIndex(
+        (prev) => (prev + 1) % currentMessages.length
+      );
+    }, 4000); // change every 4 s
+    return () => clearInterval(interval);
+  }, []);
+  
+  
 
   // =======================
   // Render
@@ -103,7 +127,20 @@ function App() {
 
               <div className="box-y-right d-z">
                 <h3>Currently...</h3>
-                <p>Working on this portfolio 🚀</p>
+                
+                <AnimatePresence mode="wait">
+                  <motion.p
+                    key={currentMsgIndex} 
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    transition={{ duration: 0.35 }}
+                    className="currently-message"
+                  >
+                    {currentMessages[currentMsgIndex]}
+                  </motion.p>
+                </AnimatePresence>
+
               </div>
             </div>
           </div>

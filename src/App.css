@@ -260,8 +260,6 @@ body, html {
   padding: 0.2rem;
   height: 200px;
   text-align: left;
-  
-
 }
 
 .box-y-right {
@@ -271,4 +269,24 @@ body, html {
   color: #fbfbfb;
   padding: 0.2rem;
   height: 200px;
+}
+
+.currently-message {
+  font-style: italic;
+  color: #b2d9ff; /* teal */
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding: 1rem;
+
+}
+
+.box-y-right h3 {
+  margin-top: 3rem; /* or adjust as needed */
+  margin-bottom: -2rem; /* or adjust as needed */
+}
+
+.box-y-right p {
+  margin-top: 0;
 }
