@@ -39,7 +39,7 @@ function App() {
 
   const currentMessages = [
     "working on this portfolio",
-    "applying to internships",
+    "Working as a Web Application Developer",
     "learning a new song on the guitar",
     "catching up on sleep"
   ];
@@ -96,6 +96,7 @@ function App() {
             Resume
           </button>
           <button className="menu-item">Projects</button>
+          <button className="menu-item">Contact</button>
           <button className="menu-item">Hobbies</button>
         </div>
 
@@ -112,12 +113,7 @@ function App() {
 
             <div className="box-y">
               <div className="box-y-left d-y">
-                <h3>Contact Me</h3>
-                <p>
-                  Email <br></br><a href="mailto:3stherade@gmail.com">3stherade@gmail.com</a><br />
-                  Socials <br></br><a href="mailto:3stherade@gmail.com">3stherade@gmail.com</a><br />
-
-                </p>
+                <h3>Coming soon...</h3>
               </div>
 
               <div className="box-y-right d-z">

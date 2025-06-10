@@ -7,7 +7,7 @@ body, html {
   height: 100%;
   font-family: 'Red Hat Display', sans-serif;
   color: #140c14;
-  background-image: url('assets/images/darkBground.png');
+  background-image: url('assets/images/darkBground2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -120,7 +120,7 @@ body, html {
   gap: 0.5rem;
   padding: 0;
   border: none;
-  height: 200px;
+  height: 315px;
   background: none;
 }
 
@@ -250,25 +250,42 @@ body, html {
   background: none;
   padding: 0;
   border: none;
+
 }
 
 .box-y-left {
   background-color: rgba(0, 0, 0, 0.6);
-  border: 1px solid #f7d2f8;
+  border: 1px solid #b2d9ff;
   border-radius: 12px;
   color: #fbfbfb;
   padding: 0.2rem;
   height: 200px;
-  text-align: left;
 }
+.box-y-left h3 {
+  margin-top: 5rem; /* or adjust as needed */
+  margin-bottom: -1rem; /* or adjust as needed */
+}
+
+.box-y-left p {
+  margin-top: 0;
+}
+
 
 .box-y-right {
   background-color: rgba(0, 0, 0, 0.6);
-  border: 1px solid #f7d2f8;
+  border: 1px solid #b2d9ff;
   border-radius: 12px;
   color: #fbfbfb;
   padding: 0.2rem;
   height: 200px;
+}
+.box-y-right h3 {
+  margin-top: 3rem; /* or adjust as needed */
+  margin-bottom: -2rem; /* or adjust as needed */
+}
+
+.box-y-right p {
+  margin-top: 0;
 }
 
 .currently-message {
@@ -282,11 +299,5 @@ body, html {
 
 }
 
-.box-y-right h3 {
-  margin-top: 3rem; /* or adjust as needed */
-  margin-bottom: -2rem; /* or adjust as needed */
-}
 
-.box-y-right p {
-  margin-top: 0;
-}
+
