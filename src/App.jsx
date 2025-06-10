@@ -76,12 +76,17 @@ function App() {
         {/* Box B – About Me */}
         <div className="box box-b">
           <p className="about-paragraph">
-            <span className="about-intro">Hi! I'm Esther.</span><br /><br />
-            I’m a Software Engineering student at the University of Guelph with a deep love for learning and building.
-            I’m especially drawn to mobile app development, automation, and data analytics, areas where I can create
-            tools that make life simpler, more meaningful, or more joyful. I’m passionate about using technology to
-            support real people in real ways, and I ultimately hope to become a professor so I can keep learning, teaching,
-            and pouring into others. For me, coding is not just a skill, it’s a way to serve.
+            <span className="about-intro">Hi! I'm Esther,</span><br /><br />
+            A Software Engineering student at the University of Guelph who’s passionate about 
+            building things that actually matter to people. In a digital age where we spend so 
+            much of our lives behind screens, I’m intentional about creating tools that encourage 
+            connection, growth, and joy, not just more noise. Whether it’s a mobile app to make 
+            daily life smoother, a script to ease someone’s workload, or a dashboard that brings 
+            clarity, I’m drawn to using tech in ways that are thoughtful, helpful, and human. 
+            I’m especially interested in mobile development, automation, and data—areas where 
+            software can quietly make life more meaningful. Long term, I hope to become a 
+            professor so I can keep learning, teaching, and pouring into others. For me, coding 
+            isn’t just a technical skill, it’s a way to serve with purpose.
           </p>
         </div>
 
