@@ -6,31 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./App.css";
 
 // Image imports
-import cruise from "./assets/images/cameraRoll/cruise.jpg";
-import niagara from "./assets/images/cameraRoll/niagara.jpg";
-import reynolds from "./assets/images/cameraRoll/reynolds.jpg";
-import montanas from "./assets/images/cameraRoll/montanas.jpg";
-import autumn from "./assets/images/cameraRoll/autumn.jpg";
-import burger from "./assets/images/cameraRoll/burger.jpg";
-import nightsky from "./assets/images/cameraRoll/nightsky.jpg";
-import ottawa from "./assets/images/cameraRoll/ottawa.jpg";
-import pasta from "./assets/images/cameraRoll/pasta.jpg";
-import poutine from "./assets/images/cameraRoll/poutine.jpg";
-import puffs from "./assets/images/cameraRoll/puffs.jpg";
-import sandwich from "./assets/images/cameraRoll/sandwich.jpg";
-import steak from "./assets/images/cameraRoll/steak.jpg";
-import sunset from "./assets/images/cameraRoll/sunset.jpg";
-import walks from "./assets/images/cameraRoll/walks.jpg";
-import toronto from "./assets/images/cameraRoll/toronto.jpg";
-import sealife from "./assets/images/cameraRoll/sealife.jpg";
-import sealife2 from "./assets/images/cameraRoll/sealife2.jpg";
-import clouds from "./assets/images/cameraRoll/clouds.jpg";
-import streets from "./assets/images/cameraRoll/streets.jpg";
-import orangesky from "./assets/images/cameraRoll/orangesky.jpg";
-
-
-
-
+import { cameraImages } from "./assets/images/cameraRoll";
 import headshot from "./assets/images/headshot1.png";
 
 // =======================
@@ -49,8 +25,6 @@ function App() {
   }, []);
 
   // Camera roll image state
-  const cameraImages = [cruise, montanas, niagara, reynolds];
-
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
