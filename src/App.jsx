@@ -7,7 +7,7 @@ import "./App.css";
 
 // Image imports
 import { cameraImages } from "./assets/images/cameraRoll";
-import headshot from "./assets/images/headshot1.png";
+import headshot from "./assets/images/pfp.png";
 
 // =======================
 // Main Component
