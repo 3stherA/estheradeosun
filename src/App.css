@@ -1,0 +1,582 @@
+/* =======================
+   Global Styles
+========================== */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Red Hat Display', sans-serif;
+  color: #140c14;
+  background-image: url('assets/images/darkBground2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.page-title {
+  text-align: center;
+  color: #e990d3;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+
+/* =======================
+   Layout Containers
+========================== */
+.grid-page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 2fr 2fr;
+  grid-template-rows: 300px 300px;
+  gap: 1rem;
+  width: 1180px;
+}
+
+
+/* =======================
+   Shared Box Styles
+========================== */
+.box {
+  background-color: rgba(0, 0, 0, 0.333);
+  border: 2px solid #f7d2f8;
+  border-radius: 12px;
+  color: #fbfbfb;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+
+/* =======================
+   Box A – Image
+========================== */
+.box-a {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  padding: 0;
+  border: none;
+  background: none;
+  display: flex;
+}
+
+.box-a-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+
+/* =======================
+   Box B – About Me
+========================== */
+.box-b {
+  grid-column: 3 / span 3;
+  grid-row: 1;
+}
+
+.about-intro {
+  font-size: 27px;
+  line-height: 1;
+  color: #fbfbfb;
+  text-align: left;
+}
+
+.about-paragraph {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #fbfbfb;
+  text-align: left;
+  padding: 1rem;
+}
+
+
+/* =======================
+   Box C – Menu
+========================== */
+.box-c {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0;
+  border: none;
+  height: 315px;
+  background: none;
+}
+
+.menu-item {
+  flex: 1;
+  width: 100%;
+  border: 1px solid #f7d2f8;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #f7d2f8;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+
+.menu-item:hover {
+  background-color: #b2d9ff;
+  color: #140c14;
+}
+
+
+/* =======================
+   Box D – Custom Grid (W, X, Y, Z)
+========================== */
+.box-d {
+  grid-column: 3 / span 3;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1.5fr 0.7fr;
+  gap: 1rem;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.box-d-left {
+  display: grid;
+  grid-template-rows: 100px 200px;
+  gap: 1rem;
+  background: none;
+  padding: 0;
+  border: none;
+}
+
+.box-d-right {
+  grid-template-rows: 120px 180px;
+  display: grid;
+  gap: 1rem;
+  background: none;
+  padding: 0;
+  border: none;
+}
+
+
+/* =======================
+   D Components – W, X, Y, Z
+========================== */
+.d-w,
+.d-y,
+.d-z {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid #f7d2f8;
+  border-radius: 12px;
+  color: #fbfbfb;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.d-x {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid #f7d2f8;
+  border-radius: 12px;
+  color: #fbfbfb;
+  padding: 0.2rem;
+  height: 309px;
+  box-sizing: auto;
+}
+
+
+/* =======================
+   Clock
+========================== */
+.clock-time {
+  font-family: "Kaisei Tokumin", serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  padding: 0.2rem;
+  letter-spacing: 0.5px;
+  margin: auto;
+}
+
+
+/* =======================
+   Camera Roll
+========================== */
+.camera-roll {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+/* =======================
+    Contact
+==========================*/
+
+
+/* =======================
+   Box Y – Contact & Currently Working On
+========================== */
+.box-y {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.box-y-left,
+.box-y-right {
+  display: grid;
+  gap: 1rem;
+  background: none;
+  padding: 0;
+  border: none;
+}
+
+.box-y-left {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid #b2d9ff;
+  border-radius: 12px;
+  color: #fbfbfb;
+  padding: 0.2rem;
+  height: 200px;
+}
+.box-y-left h3 {
+  margin-top: 5rem; /* or adjust as needed */
+  margin-bottom: -1rem; /* or adjust as needed */
+}
+
+.box-y-left p {
+  margin-top: 0;
+}
+
+
+.box-y-right {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid #b2d9ff;
+  border-radius: 12px;
+  color: #fbfbfb;
+  padding: 0.2rem;
+  height: 200px;
+}
+.box-y-right h3 {
+  margin-top: 3rem; /* or adjust as needed */
+  margin-bottom: -2rem; /* or adjust as needed */
+}
+
+.box-y-right p {
+  margin-top: 0;
+}
+
+.currently-message {
+  font-style: italic;
+  color: #b2d9ff; /* teal */
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding: 1rem;
+}
+
+
+/* =======================
+   Page Components Styles
+   ======================= */
+
+.page-container {
+  min-height: 100vh;
+  background-image: url('assets/images/darkBground2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.page-content {
+  max-width: 800px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #f7d2f8;
+  padding: 3rem;
+  border-radius: 12px;
+  color: #fbfbfb;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.page-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #e990d3;
+  border-bottom: 3px solid #f7d2f8;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+
+/* =======================
+   RESPONSIVE STYLES
+========================== */
+
+/* Tablet and Medium Screens */
+@media (max-width: 1200px) {
+  .grid-container {
+    width: 95%;
+    max-width: 1000px;
+    grid-template-columns: 1fr 1fr 1.8fr 1.8fr 1.8fr;
+    gap: 0.8rem;
+  }
+  
+  .about-intro {
+    font-size: 24px;
+  }
+  
+  .about-paragraph {
+    font-size: 14px;
+  }
+  
+  .clock-time {
+    font-size: 2rem;
+  }
+  
+  .menu-item {
+    font-size: 1rem;
+  }
+}
+
+/* Small Tablets */
+@media (max-width: 900px) {
+  .grid-page-wrapper {
+    height: auto;
+    min-height: 100vh;
+    padding: 1rem;
+    align-items: flex-start;
+  }
+  
+  .grid-container {
+    width: 100%;
+    max-width: 600px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 1rem;
+  }
+  
+  .box-a {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    height: 250px;
+  }
+  
+  .box-b {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    height: auto;
+  }
+  
+  .box-c {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    height: auto;
+  }
+  
+  .box-d {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    height: auto;
+  }
+  
+  .about-intro {
+    font-size: 22px;
+  }
+  
+  .about-paragraph {
+    font-size: 13px;
+    padding: 0.8rem;
+  }
+  
+  .clock-time {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 600px) {
+  .grid-page-wrapper {
+    padding: 0.5rem;
+  }
+  
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    max-width: 400px;
+  }
+  
+  /* Order: picture, about, menu, time, coming soon, currently, camera roll */
+  .box-a {
+    grid-column: 1;
+    grid-row: 1;
+    height: 200px;
+    order: 1;
+  }
+  
+  .box-b {
+    grid-column: 1;
+    grid-row: 2;
+    height: auto;
+    order: 2;
+  }
+  
+  .box-c {
+    grid-column: 1;
+    grid-row: 3;
+    height: auto;
+    order: 3;
+  }
+  
+  .box-d {
+    grid-column: 1;
+    grid-row: 4;
+    height: auto;
+    order: 4;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+  
+  /* Reorganize box-d components for mobile stacking */
+  .box-d-left {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+  }
+  
+  .box-d-right {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+  }
+  
+  /* Time component (d-w) */
+  .d-w {
+    order: 1;
+    height: auto;
+    min-height: 80px;
+  }
+  
+  /* Coming soon and Currently sections */
+  .box-y {
+    order: 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+  }
+  
+  .box-y-left {
+    height: auto;
+    min-height: 100px;
+    order: 1;
+  }
+  
+  .box-y-right {
+    height: auto;
+    min-height: 120px;
+    order: 2;
+  }
+  
+  /* Camera roll */
+  .d-x {
+    order: 3;
+    height: 200px;
+  }
+  
+  /* Typography scaling for mobile */
+  .about-intro {
+    font-size: 20px;
+  }
+  
+  .about-paragraph {
+    font-size: 12px;
+    padding: 0.5rem;
+    line-height: 1.6;
+  }
+  
+  .clock-time {
+    font-size: 1.5rem;
+  }
+  
+  .menu-item {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+  
+  .box-y-left h3,
+  .box-y-right h3 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .currently-message {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+  }
+}
+
+/* Very Small Mobile Screens */
+@media (max-width: 400px) {
+  .grid-container {
+    max-width: 320px;
+    gap: 0.8rem;
+  }
+  
+  .box-a {
+    height: 180px;
+  }
+  
+  .about-intro {
+    font-size: 18px;
+  }
+  
+  .about-paragraph {
+    font-size: 11px;
+  }
+  
+  .clock-time {
+    font-size: 1.3rem;
+  }
+  
+  .menu-item {
+    font-size: 0.8rem;
+    padding: 0.6rem;
+  }
+  
+  .d-x {
+    height: 150px;
+  }
+  
+  .page-title {
+    font-size: 1.8rem;
+  }
+}
