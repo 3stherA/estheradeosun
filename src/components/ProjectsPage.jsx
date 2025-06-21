@@ -8,7 +8,7 @@ export default function ProjectsPage({ goHome }) {
       name: "Transportation Scheduler",
       techStack: "Python, React, JavaScript, HTML/CSS",
       description: "Every Sunday, families, students, and volunteers in our church community needed a reliable ride, but coordinating all those moving pieces manually was time-consuming and error-prone. I built a smart scheduler that took over the heavy lifting: it pulls ride requests directly from a Google Form, calculates travel distances using Google Maps, and matches riders with volunteer drivers based on route proximity and seat availability. The result? A fully automated system that produces optimized weekly rosters in minutes instead of hours, giving organizers more time to focus on what matters.",
-      githubLink: "https://github.com/3stherA",
+      githubLink: "https://github.com/3stherA/transportation-scheduler",
       image: transportImg
     },
     {
@@ -18,14 +18,6 @@ export default function ProjectsPage({ goHome }) {
       description: "Between tuition, textbooks, groceries, and the occasional coffee, managing student life expenses can feel like a full-time job. So, I created a budgeting tool designed for students like me.. simple, intuitive, and focused. Built with React and real-time state management, this tracker helps users monitor spending across customizable categories and stay on top of their financial goals. It’s a small project with a big purpose: putting financial clarity within reach, one line item at a time.",
       githubLink: "https://github.com/3stherA",
       image: "/path/to/project2-image.jpg"
-    },
-    {
-      id: 3,
-      name: "Project Name 3",
-      techStack: "..",
-      description: "Description stub",
-      githubLink: "https://github.com/3stherA", 
-      image: "/path/to/project3-image.jpg"
     }
   ];
 
