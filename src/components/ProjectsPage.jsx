@@ -33,7 +33,7 @@ export default function ProjectsPage({ goHome }) {
               <p className="project-tech-stack">{project.techStack}</p>
               <p className="project-description">{project.description}</p>
               <a 
-                //href={project.githubLink} 
+                href={project.githubLink} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="github-link"
