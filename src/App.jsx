@@ -15,8 +15,9 @@ function App() {
   const currentMessages = [
     "Updating this Portfolio",
     "Working as a Web Application Developer",
+    "Living in Toronto",
+    "Getting ready to launch my app on the App Store",
     "Learning a New Song on the Guitar",
-    "Learning PHP"
   ];
 
   useEffect(() => {
