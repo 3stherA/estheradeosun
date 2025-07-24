@@ -9,6 +9,7 @@ export default function ProjectsPage({ goHome }) {
       techStack: "Python, React, JavaScript, HTML/CSS",
       description: "Every Sunday, families, students, and volunteers in our church community needed a reliable ride, but coordinating all those moving pieces manually was time-consuming and error-prone. I built a smart scheduler that took over the heavy lifting: it pulls ride requests directly from a Google Form, calculates travel distances using Google Maps, and matches riders with volunteer drivers based on route proximity and seat availability. The result? A fully automated system that produces optimized weekly rosters in minutes instead of hours, giving organizers more time to focus on what matters.",
       githubLink: "https://github.com/3stherA/transportation-scheduler",
+      projectLink: "https://3sthera.github.io/transportation-scheduler/",
       image: transportImg
     },
     {
@@ -40,6 +41,15 @@ export default function ProjectsPage({ goHome }) {
               >
                 <span className="github-icon">📁</span>
                 View on GitHub
+              </a>
+              <a 
+                href={project.projectLink} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="github-link"
+              >
+                <span className="github-icon">📁</span>
+                Demo the Project
               </a>
             </div>
             <div className="project-right">
