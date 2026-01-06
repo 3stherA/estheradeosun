@@ -38,7 +38,7 @@ function App() {
   // Render page
   if (currentPage === "projects") return <ProjectsPage goHome={() => setCurrentPage("home")} />;
   if (currentPage === "contact") return <ContactPage goHome={() => setCurrentPage("home")} />;
-  if (currentPage === "hobbies") return <HobbiesPage goHome={() => setCurrentPage("home")} />;
+  if (currentPage === "Internships") return <HobbiesPage goHome={() => setCurrentPage("home")} />;
 
   return (
     <HomePage
