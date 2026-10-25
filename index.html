@@ -1,16 +1,47 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Esther Adeosun | New site</title>
+  <meta name="description" content="Esther Adeosun's portfolio has moved to estheradeosun.com." />
+  <link rel="canonical" href="https://estheradeosun.com/" />
+  <style>
+    :root { --ink:#120d10; --pink:#ff5fa8; --green:#5f7f62; --blush:#ffd3e6; --paper:#fffafc; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px;
+      background: var(--paper); color: var(--ink);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    .card {
+      max-width: 560px; width: 100%; padding: 40px 32px; text-align: center;
+      background: var(--blush); border: 3px solid var(--ink); border-radius: 26px;
+      box-shadow: 6px 6px 0 var(--ink);
+    }
+    .badge {
+      display: inline-grid; place-items: center; width: 64px; height: 64px; margin-bottom: 20px;
+      background: var(--pink); border: 3px solid var(--ink); border-radius: 18px;
+      box-shadow: 4px 4px 0 var(--ink); font-weight: 800; font-size: 1.5rem;
+    }
+    h1 { margin: 0 0 12px; font-size: clamp(1.6rem, 5vw, 2.2rem); line-height: 1.1; }
+    p { margin: 0 0 24px; font-size: 1.05rem; line-height: 1.5; }
+    a.btn {
+      display: inline-block; padding: 12px 26px; background: var(--green); color: #fff;
+      border: 3px solid var(--ink); border-radius: 999px; box-shadow: 4px 4px 0 var(--ink);
+      font-weight: 700; text-decoration: none;
+    }
+    a.btn:hover { background: var(--ink); }
+    .old { display: block; margin-top: 22px; font-size: 0.9rem; color: var(--ink); }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="badge" aria-hidden="true">EA</div>
+    <h1>My portfolio has a new home.</h1>
+    <p>Everything is now at estheradeosun.com, with my latest projects and experience.</p>
+    <a class="btn" href="https://estheradeosun.com/">Go to the new site</a>
+    <a class="old" href="old.html">View my previous portfolio</a>
+  </main>
+</body>
 </html>
